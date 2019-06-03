@@ -28,6 +28,11 @@ jQuery('document').ready(function () {
     $('li.anim3').click(function () {
         $('.sub-menu3').slideToggle("slow");
     });
+    $('.popup-m').click(function () {
+        $('#nav').css('display', 'none');
+        $('.addr').css('display', 'none');
+        $('.phone').css('display', 'none');
+    });
 });
 
 
