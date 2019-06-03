@@ -15,12 +15,19 @@ header{
     min-width: 320px;
     margin: 0 auto;
 }
+.oldbrs {
+    margin: 0 auto;
+    border: 2px dotted red;
+    padding: 20px;
+    text-align: center;
+}
 .logo {
     /* background: white; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding-top: 10px;
 }
 
 /* .logo img {
@@ -238,7 +245,7 @@ img{
     background-color: black;
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../pics/320/woman.jpg");
     background-repeat: no-repeat;
-    background-position: 86% 100%;
+    background-position: 100% 100%;
     background-attachment: local;
     background-size: cover;
     padding-top: 53px;
@@ -270,7 +277,7 @@ img{
     font-weight: 900;
     font-size: 15px;
 }
-.main > a{
+.main-ramka > a{
     text-decoration: none;
 }
 .overlay{
@@ -523,6 +530,7 @@ input#coast_gal{
     font-weight: 400;
     /* border: 1px solid red; */
     background: url(../pics/320/fon_vawe.png);
+    background-size: contain;
 }
 .big-number{
     color: #ff9a00;
@@ -582,7 +590,7 @@ input#coast_gal{
     padding-top: 28px;
     /* padding-right: 15px;
     padding-left: 15px; */
-    padding-bottom: 45px;
+    padding-bottom: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -621,6 +629,7 @@ p.text-content{
     text-transform: none;
     padding-top: 28px;
     padding-bottom: 31px; 
+    margin: 0 3%;
 }
 .contact_form2 .order-button {
     font-size: 11px;
@@ -705,7 +714,12 @@ div.order-button{
      z-index: 5;
      cursor: pointer;
 }
-
+.contenttwo {
+    display: none;
+}
+.contenttwo-btn {
+    display: none;
+}
 /*...........................WE-MADE.................................*/
 
 .slider{
@@ -805,7 +819,7 @@ div.order-button{
 }
 
 /* ................................................HOW-ORDER............................................. */
-.how-order{
+.main-how-order{
     background: url(../pics/320/fon_vawe.png);
     background-size: cover;
     display: flex;
@@ -813,7 +827,7 @@ div.order-button{
     align-items: center;
     /* border: 1px solid red; */
 }
-    .how-order > p {
+    .main-how-order > p {
         font-family: Ubuntu;
         font-size: 25px;
         font-weight: 400;
@@ -823,8 +837,29 @@ div.order-button{
         margin-bottom: 42px;
         margin-top: 33px;
     }
-    .how-order > div{
+    .how-order > div {
         margin-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 280px;
+        height: 194px;
+        position: relative;
+    }
+    .how-orderminimg {
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+    .how-orderminimg img.ho23 {
+        width: 23px;
+        height: 23px;
+    }
+    
+    .how-order img {
+        width: 280px;
+        height: 194px;
     }
     .how-order > div:last-child{
         margin-bottom: 40px;
@@ -876,7 +911,7 @@ div.order-button{
 }
 /* .............................................WORKS................................................ */
 .works{
-		background-color: #dadada;
+        background-color: #dadada;
 		padding-top: 20px;
         padding-bottom: 45px;
         position: relative;
@@ -980,12 +1015,13 @@ form input{
     .content {
 
         padding-top: 28px;
-        padding-bottom: 45px;
+        padding-bottom: 15px;
         display: inline-block;
     }
     .bmr{
     margin-bottom: 15px;
     margin-top: 15px;
+    display: block;
     }
     .content-flex-btn{
         display: flex;
@@ -1127,14 +1163,119 @@ form input{
         margin: 0 auto;
         text-align: center;
     }
+/*------------------------------------------------------MAIN SECTION-------------------------------------------------------------------*/
+    .main {
+        height: 366px;
+        background-color: black;
+        background: url("../pics/320/woman.jpg");
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-attachment: local;
+        background-size: cover;
+        position: relative;
+    }
+    .main-ramka{
+        background-color: black;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        background-repeat: no-repeat;
+        width: 466px;
+        height: 300px;
+        position: absolute;
+        top: 33px;
+        left: 10%;
+       
+    }
+    .advantages {
+        flex-wrap: wrap;
+        justify-content: space-between;
 
+    }
+    .advantages1,
+    .advantages2,
+    .advantages3,
+    .advantages4,
+    .advantages5,
+    .advantages6 {
+        text-align: center;
+        padding: 0 0 30px;
+        margin: 0;
+        width: 30%;
+        height: 33.3%;
+    }
+   .content-title-img, .content > p {
+       display: none;
+   }
+   .content {
+       display: block;
+   }
+   .contenttwo {
+       display: flex;
+       justify-content: space-between;
+   }
+   .contenttwo-img,
+   .contenttwo-text-flex {
+       width: 50%;
+   }
+   .contenttwo-img img {
+       width: 100%;
+       padding: 10px;
+   }
+   p.contenttwo-text-p1 {
+       font-family: Ubuntu;
+       font-size: 25px;
+       font-weight: 400;
+       text-align: center;
+       color: #333333;
+       text-transform: uppercase;
+   }
+   p.contenttwo-text-p2 {
+       font-family: Ubuntu;
+       font-size: 16px;
+       font-weight: 400;
+       text-align: left;
+       color: #333333;
+       line-height: 30px;
+       text-transform: none;
+       padding-top: 28px;
+       padding-bottom: 0;
+   }
+   .we-made {
+       background-image: url(../pics/bg.jpg);
+       background-size: cover;
+    }
+    .how-order {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .contact_form {
+        display: flex;
+        justify-content: space-around;
+    }
+    .form-control-name,
+    .form-control-phone,
+    .form-control-submit {
+        width: 30%;
+    }
+    .works {
+        background-image: url(../pics/750/Layer21.jpg);
+        background-repeat: no-repeat;
+        background-position: 40% 100%;
+        background-attachment: local;
+        background-size: cover;
+    }
 
+    
 }
-/*--------------------------------------END MEDIA 1170--------------------------------------------------------------------------*/
+/*--------------------------------------MEDIA 1170--------------------------------------------------------------------------*/
 @media screen and (min-width: 1170px) {
     .wrapper{
         min-width: 1170px;
-        max-width: 1200px;
+        max-width: 1400px;
+    }
+    .main {
+        height: 400px;
     }
     .wrapper-logo {
         background-image: url(../pics/750/bg.png);
@@ -1174,6 +1315,42 @@ form input{
         text-decoration: none;
         text-align: center;
     }
+    .advantages {
+        flex-wrap: nowrap;
+        justify-content: space-between;
 
-
+    }
+    .content-flex-btn {
+        display: none;
+    }
+    .contenttwo-btn {
+        display: flex;
+        justify-content: space-around;
+    }
+    .contenttwo-img,
+    .contenttwo-text-flex {
+        width: 50%;
+    }
+    .contenttwo-text-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .how-order {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .how-order>div {
+        margin-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 210px;
+        height: 124px;
+        position: relative;
+    }
+    .they-trust-us {
+        padding-top: 30px;
+    }
 }
