@@ -1,0 +1,1179 @@
+*,
+html, 
+body {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+   }
+header{
+    font-family: 'Ubuntu',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    min-width: 320px;
+    margin: 0 auto;
+}
+.logo {
+    /* background: white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .logo img {
+    margin: 0 auto;
+    display: block;
+} */
+.owl-carousel .owl-nav .owl-prev{
+          background-image: url("../pics/320/slider/strelka-right.png");
+          background-size: cover;
+          background-color: transparent;
+          width: 30px;
+          height: 30px;
+        }
+.owl-carousel .owl-nav .owl-next{
+          background-image: url("../pics/320/slider/strelka-left.png");
+          background-color: transparent;
+          background-size: cover;
+          width: 30px;
+          height: 30px;
+        }
+.clearfix {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.bmr{
+    margin-bottom: 15px;
+}
+/*------------------------------LOGO SECTION----------------------------*/
+.logo-map, 
+.logo-hourswork,
+.logo-telefon,
+.logo-map-karta,
+.logo-hourswork_ico,
+.main-header,
+.logo-telefon_ico
+ {
+    display: none;
+}
+.logo-cal-button{
+    display: none;
+    margin: 0 auto;
+    max-width: 289px;
+    height: 43px;
+    border-radius: 8px;
+    background-color: #f7ae3f;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333333;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 43px;
+    cursor: pointer;
+}
+/* .......................MENU......................................... */
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 400;
+    /* font-size: 20px; */
+}
+nav {
+    padding: 10px;
+}
+nav ul, nav li{
+    list-style: none;
+}
+.menu li {
+    list-style: none;
+    margin: 0 15px;
+    max-height: 366px;
+    max-width: 320px;
+}
+nav ul li ul li:hover{
+    background-color: #f7ae3f;
+}
+.menu{
+    display: flex;
+    height: 52px;
+    background-color: #f7ae3f;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.menu div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu-text{
+    font-size: 20px;
+    color: #333333;
+    margin-right: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.menu-text:hover{
+    font-weight: 900;
+}
+.sub-menu1 li, 
+.sub-menu2 li, 
+.sub-menu3 li{
+    margin-left: 40px;
+    padding: 5px;
+    font-size: 18px;
+    list-style: none;
+}
+.sub-menu1 li a:hover,
+.sub-menu2 li a:hover,
+.sub-menu3 li a:hover {
+    font-weight: 700;
+}
+.sub-menu1,
+.sub-menu2,
+.sub-menu3 {
+    display: none;
+}
+
+#menu-button,
+#menu-button-geo,
+#menu-button-phone {
+    cursor: pointer;
+}
+#menu-button-phone{
+    animation-duration: 10s;
+}
+#nav{
+    position: relative;
+    background: #ea9310;
+    display: none;
+}
+.map{
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.map iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.addr{
+    position: relative;
+    display: none;
+    background: #ea9310;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    /*height: 300px;*/
+}
+.addr span{
+    display: block;
+    padding: 15px 0;
+}
+.phone{
+    position: relative;
+    display: none;
+    background: #ea9310;
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 20px;
+}
+.phone a{
+    text-decoration: none;
+    color: black;
+}
+.phone span{
+    font-size: 24px;
+    color: #fff600
+}
+.cal-button{
+    margin: 0 auto;
+    max-width: 289px;
+    height: 43px;
+    border-radius: 8px;
+    background-color: #fff600;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333333;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 43px;
+    cursor: pointer;
+}
+.hour{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 20px 0;
+}
+.hour_work{
+    font-size: 14px;
+}
+.clock{
+    margin-right: 10px;
+}
+img{
+    transition: transform 1s ease;
+}
+.rotate{
+    transform: rotate(90deg);
+}
+
+/*............................MAIN....................*/
+.main{
+    height: 366px;
+    background-color: black;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../pics/320/woman.jpg");
+    background-repeat: no-repeat;
+    background-position: 86% 100%;
+    background-attachment: local;
+    background-size: cover;
+    padding-top: 53px;
+    padding-bottom: 96px;
+}
+.main p{
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.calc-button{
+    margin: 0 auto;
+    max-width: 289px;
+    height: 43px;
+    border-radius: 8px;
+    background-color: #fff600;
+    text-align: center;
+    margin-top: 40px;
+    color: #333333;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 43px;
+}
+.calc-button:hover{
+    font-weight: 900;
+    font-size: 15px;
+}
+.main > a{
+    text-decoration: none;
+}
+.overlay{
+    position: fixed;
+    display: none;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(0,0,0,.4);
+    overflow: scroll;
+}
+.overlay2,
+.overlayz,
+.overlay_bz,
+.overlay3,
+.overlay-gal-goriz_alum,
+.overlay-gal-goriz_derevo,
+.overlay-gal-rulonki_lvt,
+.overlay-gal-rulonki_mg,
+.overlay-gal-rulonki_mini,
+.overlay-gal-rulonki_uni,
+.overlay-gal-rulonki_zebra,
+.overlay-gal-vertikalki_plast,
+.overlay-gal-vertikalki_tkan,
+.overlay-gal-vertikalki_metal {
+    position: fixed;
+    display: none;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(0,0,0,.4);
+    overflow: scroll;
+}
+.popup{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    /* height: auto; */
+    margin: 10px auto;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+}
+    .popup-form a {
+        color: #000;
+    }
+    .popup-form > p{
+        text-align: center;
+        margin-top: 15px;
+    }
+    .popup-close {
+        align-self: flex-end;
+        cursor: pointer;
+        margin-top: 5px;
+        margin-right:5px;
+        text-decoration: underline;
+        color:#f7ae3f;
+        
+    }
+    .popup-close-gal{
+        align-self: center;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-right:5px;
+        text-decoration: underline;
+        color:#000;
+    }
+    .popup-close2,
+    .popup-close3,
+    .popup-close_bz {
+        align-self: flex-end;
+        cursor: pointer;
+        margin-top: 5px;
+        margin-right: 5px;
+        text-decoration: underline;
+        color: #f7ae3f;
+
+    }
+        .popup-close span{
+            display: inline-block;
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            background-color: #f7ae3f;
+            margin-left: 5px;
+            color: black;
+        }
+        .popup-close2 span,
+        .popup-close3 span,
+        .popup-close_bz span {
+            display: inline-block;
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            background-color: #f7ae3f;
+            margin-left: 5px;
+            color: black;
+            margin-bottom: 20px;
+        }
+    .popup-title {
+        font-size: 25px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
+    .popup-title+p{
+        margin-bottom: 15px;
+    }
+    .popup-title2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 15px 0;
+    }
+    .popup-varkrep,
+    .popup-tipkrep,
+    .popup-maxraz {
+        font-size: 14px;
+        font-weight: normal;
+        border: 2px solid #f7ae3f;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+    }
+    div.popup-varkrep[selected],
+    div.popup-tipkrep[selected],
+    div.popup-maxraz[selected] {
+        background-color: #f7ae3f;
+    }
+    .popup-img{
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+    }
+    .popup-ul{
+      margin-bottom: 20px;
+    }
+.popup-form-calc input,
+.popup-form-calc select {
+    display: inline-block;
+    border: 2px solid black;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+#width_gal{
+    margin-right: 8%;
+}
+#width_gal,
+#height_gal {
+    width: 45%;
+    display: inline-block;
+}
+#button-calc{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+#button-zakaz{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+label[for="coast_gal"]{
+    display: inline-block;
+    width: 40%;
+}
+input#coast_gal{
+    display: inline-block;
+    width: 40%;
+}
+.prim-coast{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+    .prim-coast div.form-control{
+        margin: 0;
+        display: inline-block;
+        border: 2px solid black;
+        width: 55%;
+        height: 35px;
+        border-radius: 5px;
+        padding-left: 5px;
+    }
+    div.note-text{
+        text-align: center;
+        font-size: 10px;
+    }
+.coast-gal{
+    text-align: center;
+}
+#feedback-name2,
+#feedback-phone2,
+#feedback-phone3,
+#feedback-name3 {
+    border: 2px solid black;
+}
+.rotate_img{
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 1s ease;
+    transform: rotate(90deg);
+}
+.anim_img1{
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 1s ease;
+}
+
+.center{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.button-zakaz{
+    margin-top: 10px;
+}
+    
+/*...........................ADVATAGES.................................*/
+.advantages{
+    height: 822px;
+    padding-top: 29px;
+    color: #333333;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 400;
+    /* border: 1px solid red; */
+    background: url(../pics/320/fon_vawe.png);
+}
+.big-number{
+    color: #ff9a00;
+    font-family: Ubuntu;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.fat-text{
+    color: #333333;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.advantages1, 
+.advantages2, 
+.advantages3, 
+.advantages4, 
+.advantages5, 
+.advantages6 {
+    text-align: center;
+}
+.advantages1{
+    padding-bottom: 43px;
+}
+.advantages2{
+    padding-bottom: 42px;
+}
+.advantages3{
+    padding-bottom: 43px;
+}
+.advantages4{
+    padding-bottom: 41px;
+}
+.advantages5{
+    padding-bottom: 49px;
+}
+.orange-text{
+    color: #ff9a00;
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.orange-text-up{
+    color: #ff9a00;
+    font-family: Ubuntu;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+/*...........................CONTENT.................................*/
+.content{
+    
+    padding-top: 28px;
+    /* padding-right: 15px;
+    padding-left: 15px; */
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+}
+    .content > p{
+        font-family: Ubuntu;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        color: #333333;
+        text-transform: uppercase;
+    }
+    /* .content > div >img{
+    } */
+    .content > div >img{
+        margin-top: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+    .content > div > img{
+        width: 100%;
+    }
+    .content a{
+        text-decoration: none;
+        display: block;
+        margin: 0 auto;
+       
+    }
+p.text-content{
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    line-height: 30px;
+    text-transform: none;
+    padding-top: 28px;
+    padding-bottom: 31px; 
+}
+.contact_form2 .order-button {
+    font-size: 11px;
+}
+.order-button{
+    width: 290px;
+    height: 53px;
+    border-radius: 8px;
+    background-color: #ff9a00;
+    color: #333333;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 53px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.order-button:hover {
+    font-weight: 900;
+    font-size: 17px;
+    cursor: pointer;
+}
+div.order-button{
+    margin-bottom: 28px;
+}
+.sert-button{
+    width: 290px;
+    height: 53px;
+    border-radius: 8px;
+    border: 3px solid #ff9a00;
+    background-color: #ffffff;
+    color: #ff9a00;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 53px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sert-button:hover{
+    font-weight: 900;
+    font-size: 17px;
+}
+.contact_form2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#content-feedback-name,
+#content-feedback-phone,
+#content-feedback-address {
+    border: #000 3px solid;
+    border-radius: 5px;
+    height: 53px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 53px;
+}
+#content-feedback-address {
+    font-size: 16px;
+}
+
+#content-feedback-name:hover,
+#content-feedback-phone:hover,
+#content-feedback-address:hover {
+    border: #ff9a00 4px solid;
+}
+
+.arrow-left-content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    bottom:50%;
+    z-index: 5;
+    cursor: pointer;
+}
+.arrow-right-content{
+     position: absolute;
+     top: 50%;
+     right: 5%;
+     bottom:50%;
+     z-index: 5;
+     cursor: pointer;
+}
+
+/*...........................WE-MADE.................................*/
+
+.slider{
+    position: relative;
+}
+.we-made{
+    background-color: #f7ae3f;
+    padding-top: 34px;
+    padding-bottom: 27px;
+}
+.slide-content {
+    position: relative;
+}
+.slide-content div{
+    text-align: center;
+}
+.slide-content p{
+   margin-top: 20px;
+}
+.slide-content p a {
+    text-decoration: none;
+}
+.slide-content img{
+    max-width: 260px;
+    height: 260px;
+    margin: 0 auto;
+}
+.we-made > p {
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.arrow-right{
+    position: absolute;
+    top: 110px;
+    right: 16px;
+    cursor: pointer;
+}
+.arrow-left {
+    position: absolute;
+    top: 110px;
+    left: 16px;
+    cursor: pointer;
+}
+.price-text{
+    color: #824e00;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 700;
+}
+.gga, 
+.ggd,
+.grl,
+.grmg,
+.grmin,
+.gru,
+.grzebra,
+.gvt,
+.gvp,
+.gvm {
+    cursor: pointer;
+}
+
+.overlay-gal-goriz_alum ul>li,
+.overlay-gal-goriz_derevo ul>li,
+.overlay-gal-rulonki_lvt ul>li, 
+.overlay-gal-rulonki_mg ul>li, 
+.overlay-gal-rulonki_mini ul>li, 
+.overlay-gal-rulonki_uni ul>li,
+.overlay-gal-rulonki_zebra ul>li,
+.overlay-gal-vertikalki_tkan ul>li,
+.overlay-gal-vertikalki_plast ul>li,
+.overlay-gal-vertikalki_metal ul>li {
+    font-size: 16px;
+}
+.overlay-gal-goriz_alum ul>li:before,
+.overlay-gal-goriz_derevo ul>li:before,
+.overlay-gal-rulonki_lvt ul>li:before,
+.overlay-gal-rulonki_mg ul>li:before,
+.overlay-gal-rulonki_mini ul>li:before,
+.overlay-gal-rulonki_uni ul>li:before,
+.overlay-gal-rulonki_zebra ul>li:before,
+.overlay-gal-vertikalki_tkan ul>li:before,
+.overlay-gal-vertikalki_plast ul>li:before,
+.overlay-gal-vertikalki_metal ul>li:before {
+        content: '✔';
+        /* position: absolute; */
+        /* top: 0;
+        left: 0; */
+        margin-right: 5px;
+        color: #f7ae3f;
+}
+
+/* ................................................HOW-ORDER............................................. */
+.how-order{
+    background: url(../pics/320/fon_vawe.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+    .how-order > p {
+        font-family: Ubuntu;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        color: #333333;
+        text-transform: uppercase;
+        margin-bottom: 42px;
+        margin-top: 33px;
+    }
+    .how-order > div{
+        margin-bottom: 40px;
+    }
+    .how-order > div:last-child{
+        margin-bottom: 40px;
+    }
+/* ...........................................THEY-TRUST-US........................................... */
+.they-trust-us{
+    position: relative;
+}
+.slade-they-trust-us img{
+    display: block;
+    margin: 0 auto;
+    height: 109px;
+    width: 185px;
+}
+
+.slide-they-trust-us > div{
+     overflow: hidden;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+}
+.trust-arrow-right{
+    position: absolute;
+    top: 45%;
+    right: 16px;
+    cursor: pointer;
+}
+.trust-arrow-left{
+    position: absolute;
+    top: 45%;
+    left: 16px;
+    cursor: pointer;
+}
+.text-uppercase{
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    text-transform: uppercase;
+}
+.they-trust-us > p {
+    margin-top: 38px;
+    margin-bottom: 29px;
+}
+.they-trust-us{
+    padding-bottom: 48px;
+}
+/* .............................................WORKS................................................ */
+.works{
+		background-color: #dadada;
+		padding-top: 20px;
+        padding-bottom: 45px;
+        position: relative;
+}
+.works p.text-uppercase{
+	margin-bottom: 20px;
+}
+
+.slider-work-content img {
+    display: block;
+    padding: 0 10px;
+}
+
+.work-arrow-right{
+	position: absolute;
+	top: 47%;
+	right: 16px;
+	cursor: pointer;
+}
+.work-arrow-left {
+	position: absolute;
+	top: 47%;
+	left: 16px;
+	cursor: pointer;
+}
+/*.............................................FEEDBACK......................................*/
+.feedback{
+	background: #6f6f6f;
+    padding: 50px 10px 50px 10px;
+    
+}
+.form-control-name,
+.form-control-phone {
+	width: 100%;
+	background-color: #fff;
+	text-align: left;
+	padding-left: 15px;
+	border: none;
+	margin-bottom: 20px;
+}
+.form-control-submit{
+	width: 100%;
+	border: none;
+}
+form input{
+	margin-bottom: 10px;
+}
+/* ...............................................THANKYOU PAGE..................................................... */
+.thankyou {
+    text-align: center;
+    font-size: 18px;
+}
+
+.thankyou h1 {
+    color: green;
+    font-size: 28px;
+}
+
+.thankyou p {
+    font-size: 18px;
+}
+
+/* ....................................................!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!----МЕДИА ЗАПРОСЫ!--------------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!...................................... 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 480px){
+    .wrapper {
+        min-width: 480px;
+    }
+    .main p{
+        margin: 50px 50px 50px;
+    }
+    /*...........................ADVATAGES.................................*/
+
+    .advantages {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: space-around;
+        padding-top: 35px;
+        height: 100%;
+        background: url(../pics/480/fon_vawe.png);
+    }
+    .advantages1,
+    .advantages2,
+    .advantages3,
+    .advantages4,
+    .advantages5,
+    .advantages6 {
+        text-align: center;
+        padding: 0 0 30px;
+        margin: 0;
+        width: 50%;
+        height: 33.3%;
+    }
+    /* ....................................HOW ORDER................................................................................ */
+    .how-order {
+        background: url(../pics/480/fon_vawe.png);
+        
+    }
+    /*...........................CONTENT.................................*/
+    .content {
+
+        padding-top: 28px;
+        padding-bottom: 45px;
+        display: inline-block;
+    }
+    .bmr{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    }
+    .content-flex-btn{
+        display: flex;
+        justify-content: space-around;
+    }
+    .content-title-img{
+        max-width: 45%;
+        float: left;
+    }
+    p.text-content {
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        color: #333333;
+        line-height: 30px;
+        text-transform: none;
+        padding-top: 28px;
+        padding-bottom: 0;
+    }
+    .order-button{
+    width: 220px;
+    height: 53px;
+    border-radius: 8px;
+    background-color: #ff9a00;
+    color: #333333;
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 53px;
+    text-transform: uppercase;
+    text-align: center;
+    }
+    .order-button:hover {
+        font-weight: 900;
+        font-size: 13px;
+        cursor: pointer;
+    }
+    div.order-button{
+        margin-bottom: 28px;
+    }
+    .sert-button{
+        width: 220px;
+        height: 53px;
+        border-radius: 8px;
+        border: 3px solid #ff9a00;
+        background-color: #ffffff;
+        color: #ff9a00;
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 53px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .sert-button:hover{
+        font-weight: 900;
+        font-size: 17px;
+    }
+/*------------------------------------------------------------FEEDBACK------------------------------------------------*/
+    .form-control-name,
+    .form-control-phone {
+        width: 100%;
+        background-color: #fff;
+        text-align: left;
+        padding-left: 15px;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    .form-control-submit {
+        width: 100%;
+        border: none;
+    }
+}
+/*-------------------------------------- MEDIA 750--------------------------------------------------------------------------*/
+@media screen and (min-width: 750px) {
+    .wrapper{
+        min-width: 750px;
+    }
+    /*-----------------------------------LOGO SECTION-------------------------*/
+    .logo {
+    justify-content: space-between;
+    }
+    .logo-cal-button {
+        display: block;
+        margin: 0 auto;
+        min-width: 220px;
+        height: 43px;
+        border-radius: 8px;
+        background-color: #f7ae3f;
+        text-align: center;
+        margin-top: 10px;
+        /*margin-bottom: 10px;*/
+        color: #333333;
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 43px;
+        cursor: pointer;
+    }
+    .logo-map,
+    .logo-hourswork,
+    .logo-telefon,
+    .main-header,
+    .logo-map-karta {
+        display: block;
+    }
+    .logo-map-karta {
+        display: flex;
+    }
+        .logo-map-karta > p {
+            margin-left: 10px;
+        }
+        .logo-map-karta a {
+            color: red;
+        }
+    .logo-telefon_tel {
+        font-size: 24px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .logo-telefon_tel a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .logo-telefon_tel span {
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .main-header {
+        display: block;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+}
+/*--------------------------------------END MEDIA 1170--------------------------------------------------------------------------*/
+@media screen and (min-width: 1170px) {
+    .wrapper{
+        min-width: 1170px;
+        max-width: 1200px;
+    }
+    .wrapper-logo {
+        background-image: url(../pics/750/bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        height:100%;
+    }
+    .logo-hourswork_ico {
+        display: block;
+        margin-right: 10px;
+    }
+    .main-header {
+        font-size: 34px;
+    }
+    .logo-hourswork {
+        display: flex;
+        align-items: center;
+    }
+    .logo-telefon_ico {
+        display: block;
+        margin-right: 5px;
+        height: 100%;
+    }
+    .logo-telefon-1170 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .logo-telefon_tel span {
+        font-size: 28px;
+        font-weight: 900;
+    }
+    .logo-telefon_tel {
+        font-size: 22px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+
+}
