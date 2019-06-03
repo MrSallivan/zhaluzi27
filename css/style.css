@@ -56,6 +56,9 @@ header{
 .bmr{
     margin-bottom: 15px;
 }
+#navgor{
+        display: none;
+    }
 /*------------------------------LOGO SECTION----------------------------*/
 .logo-map, 
 .logo-hourswork,
@@ -489,6 +492,10 @@ input#coast_gal{
 #feedback-phone3,
 #feedback-name3 {
     border: 2px solid black;
+    width: 100%;
+}
+#feedback-order3 {
+    width: 100%;
 }
 .rotate_img{
     -moz-transform: rotate(90deg);
@@ -1106,6 +1113,13 @@ form input{
     .logo {
     justify-content: space-between;
     }
+    .wrapper-logo {
+        background-image: url(../pics/750/bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        height:100%;
+    }
     .logo-cal-button {
         display: block;
         margin: 0 auto;
@@ -1162,6 +1176,76 @@ form input{
         font-weight: 900;
         margin: 0 auto;
         text-align: center;
+    }
+    .menu {
+        display: none;
+    }
+    #nav {
+        display: none;
+    }
+    #navgor{
+        display: block;
+        background-color: #f7ae3f;
+    }
+    #navgor > ul {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .menu-text{
+    font-size: 18px;
+    color: #333333;
+    margin-right: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    }
+    .menu-text:hover{
+        font-weight: 400;
+    }
+    #navgor > ul > li {
+        position: relative;
+    }
+    #navgor > ul > li:hover .sub-menu1,
+    #navgor > ul > li:hover .sub-menu2,
+    #navgor > ul > li:hover .sub-menu3 {
+        display: block;
+        z-index: 2;
+    }
+    .sub-menu1,
+    .sub-menu2,
+    .sub-menu3 {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: #f7ae3f;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .sub-menu1 li, 
+    .sub-menu2 li, 
+    .sub-menu3 li {
+        margin: 0;
+        /*margin-left: 20px;
+        margin-right: 20px;*/
+        padding: 10px 10px;
+        font-size: 18px;
+        list-style: none;
+        text-align: center;
+    }
+    .sub-menu1 li:hover:last-child,
+    .sub-menu2 li:hover:last-child,
+    .sub-menu3 li:hover:last-child {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .sub-menu1 li:hover, 
+    .sub-menu2 li:hover, 
+    .sub-menu3 li:hover {
+         background-color: #fff600;
+    }
+    .block {
+        display: block;
     }
 /*------------------------------------------------------MAIN SECTION-------------------------------------------------------------------*/
     .main {
