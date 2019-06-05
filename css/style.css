@@ -364,6 +364,9 @@ img{
 
     }
         .popup-close span{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             display: inline-block;
             text-align: center;
             width: 20px;
@@ -376,6 +379,9 @@ img{
         .popup-close2 span,
         .popup-close3 span,
         .popup-close_bz span {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             display: inline-block;
             text-align: center;
             width: 20px;
@@ -386,6 +392,35 @@ img{
             color: black;
             margin-bottom: 20px;
         }
+        .popup-m {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: black;
+            font-size: 14px;
+        }
+        .popup-m span {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 100%;
+            background-color: #fff600;
+            margin: 0;
+            padding: 0;
+            margin-left: 5px;
+            color: red;
+            
+            
+        }
+
     .popup-title {
         font-size: 25px;
         font-weight: 400;
@@ -1436,5 +1471,17 @@ form input{
     }
     .they-trust-us {
         padding-top: 30px;
+    }
+    .trust-arrow-right{
+    position: absolute;
+    top: 57%;
+    right: 5px;
+    cursor: pointer;
+    }
+    .trust-arrow-left{
+        position: absolute;
+        top: 57%;
+        left: 5px;
+        cursor: pointer;
     }
 }
