@@ -453,6 +453,16 @@ img{
     div.popup-maxraz[selected] {
         background-color: #f7ae3f;
     }
+    div.popup-varkrep[selected]:after,
+    div.popup-tipkrep[selected]:after,
+    div.popup-maxraz[selected]:after {
+        content: '✔';
+        /* position: absolute; */
+        /* top: 0;
+        left: 0; */
+        margin-left: 5px;
+        color: green;
+    }
     .popup-img{
         width: 100%;
         height: 100%;
@@ -1384,7 +1394,15 @@ form input{
         background-attachment: local;
         background-size: cover;
     }
-
+    /*------------------------------------------------------------POPUP------------------------------------------------------------*/
+    .popup {
+        min-width: 750px;
+       
+    }
+    .popup-ul {
+        text-align: center;
+    }
+    
     
 }
 /*--------------------------------------MEDIA 1170--------------------------------------------------------------------------*/
@@ -1460,6 +1478,7 @@ form input{
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
+        padding-bottom: 45px;
     }
     .how-order>div {
         margin-bottom: 40px;
@@ -1470,7 +1489,7 @@ form input{
         position: relative;
     }
     .they-trust-us {
-        padding-top: 30px;
+        padding-top: 0;
     }
     .trust-arrow-right{
     position: absolute;
