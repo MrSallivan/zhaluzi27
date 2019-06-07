@@ -73,7 +73,7 @@ $(document).ready(function(){
         ]
         });
     $('.slider-work-content').slick({
-      infinite: false,
+      infinite: true,
       speed: 300,
       accessibility: true,
       adaptiveHeight: true,
