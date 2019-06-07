@@ -167,6 +167,7 @@ $(function () {
 		$('.anim_img3').toggleClass('rotate_img');
 	});
 });
-	
+
+
 
 
