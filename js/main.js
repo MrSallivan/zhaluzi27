@@ -35,6 +35,7 @@ $(function(){
 	$('.button-zakazz').on('click', function () {
 		$('.overlayz').show();
 		$('.overlay-gal-vert_alum').hide();
+		$('.overlay-gal-goriz_derevo').hide();
 		$('.overlay-gal-goriz_alum').hide();
 		$('.overlay-gal-rulonki_lvt').hide();
 		$('.overlay-gal-rulonki_mg').hide();
@@ -166,6 +167,7 @@ $(function () {
 		$('.anim_img3').toggleClass('rotate_img');
 	});
 });
-	
+
+
 
 

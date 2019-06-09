@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="libs/simplebox/simplebox.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="js/html5shiv.js"></script>
@@ -96,8 +97,38 @@
                             <li><a href="#3">Металл</a></li>
                         </ul>
                     </li>
+                </ul>
+                <div class="popup-m"><span>&times;</span></div>
+            </nav>
+            <nav id="navgor">
+                <ul>
+                    <li><span class="menu-text">Горизонтальные жалюзи</span> <img class="rotate_img" src="pics/320/str_menu.png" height="13" alt="">
+                        <ul class="sub-menu1">
+                            <li><a class="block" href="#1">Алюминиевые</a></li>
+                            <li><a class="block" href="#2">Деревянныее</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="menu-text">Рулонные шторы</span><img class="rotate_img" src="pics/320/str_menu.png"
+                    height="13" alt="">
+                        <ul class="sub-menu2">
+                            <li><a class="block" href="#1">LVT</a></li>
+                            <li><a class="block" href="#2">MG</a></li>
+                            <li><a class="block" href="#3">mini</a></li>
+                            <li><a class="block" href="#4">Кассетные UNI1/UNI2</a></li>
+                            <li class="anim4"><a href="#5">День-ночь (Зебра)</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="menu-text">Вертикальные жалюзи</span><img class="rotate_img" src="pics/320/str_menu.png"
+                    height="13" alt="">
+                        <ul class="sub-menu3">
+                            <li><a class="block" href="#1">Тканевые</a></li>
+                            <li><a class="block" href="#2">Пластиковые</a></li>
+                            <li><a class="block" href="#3">Металл</a></li>
+                        </ul>
+                    </li>
                     
                 </ul>
+
             </nav>
             <div class="addr">
                 <span> г.Хабаровск, ул. Некрасова 44</span>
@@ -105,6 +136,7 @@
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae967e07b198990acfa44ba22444f34ff5568c57bce7180aed4827cef37b00f49&amp;source=constructor"
                     frameborder="0"></iframe>
                 </div>
+                <div class="popup-m"><span>&times;</span></div>
             </div>
             <div class="phone">
                 <a href="tel: +74212280083"><span>+7 (4212)</span> 28-00-83</a>
@@ -120,6 +152,7 @@
                         Сб.-Вс. 11-16
                     </div>
                 </div>
+                <div class="popup-m"><span>&times;</span></div>
             </div>
             <div class="overlay3">
                 <div class="popup">
@@ -135,7 +168,7 @@
                             placeholder="Введите свое имя"><br>
                         <input id="feedback-phone3" class="form-control-phone order-button" type="phone" name="phone"
                             placeholder="Телефон"><br>
-                        <input type="submit" value="Заказать звонок" class="form-control-submit order-button">
+                        <input type="submit" id="feedback-order3" value="Заказать звонок" class="form-control-submit order-button">
                     </form>
                 </div>
             </div>
@@ -199,7 +232,7 @@
                         <!-- END Hidden Req-->
                         <input id="feedback-name2" class="form-control-name order-button" type="text" name="name" placeholder="Введите свое имя"><br>
                         <input id="feedback-phone2" class="form-control-phone order-button" type="phone" name="phone" placeholder="Телефон"><br>
-                        <input type="submit" value="Заказать жалюзи" class="form-control-submit order-button">
+                        <input type="submit" value="Заказать жалюзи" class="form-control-submit order-button" id="feedback-order3">
                     </form>
                 </div>
             </div>
@@ -217,7 +250,7 @@
                             placeholder="Введите свое имя"><br>
                         <input id="feedback-phone2" class="form-control-phone order-button" type="phone" name="phone"
                             placeholder="Телефон"><br>
-                        <input type="submit" value="Заказать жалюзи" class="form-control-submit order-button">
+                        <input type="submit" value="Заказать жалюзи" class="form-control-submit order-button" id="feedback-order3">
                     </form>
                 </div>
             </div>
@@ -233,10 +266,18 @@
                         <li>Гарантия 1 год</li>
                         <li>Цена от производителя</li>
                     </ul>
-                    <p>Светозащитные устройства, состоящие из вертикальных или горизонтальных пластин, так называемых ламелей. Ламели могут
-                    быть неподвижными или поворачиваться вокруг своей оси для регулирования световых и воздушных потоков. Жалюзи начал
-                    производить дизайнер англичанин Джон Уэбстер в 1760-х годах в Филадельфии.</p> 
-                    <div class="popup-img"><img src="pics/320/read.jpg" alt=""></div>
+                    <p>Горизонтальные жалюзи алюминиевые созданы для декорирования оконных проемов жилых и нежилых помещений. Они отличаются  прочностью, надежностью и долговечностью, обладают высокой пожаробезопасностью, простой ухода и малой восприимчивостью к агрессивному воздействию бытовой химии. Алюминиевые жалюзи горизонтального типа, благодаря повышенной устойчивости к ультрафиолету, рекомендуется использовать для окон, расположенных с солнечной стороны здания. Они не потеряют свой первоначальный вид даже после многолетней эксплуатации. Производители предлагают большой выбор моделей, отличающихся друг от друга размером, дизайном и цветовыми решениями.  </p> 
+                    <div class="popup-img owl-carousel">
+                        <img src="pics/our_works/ga1.jpg" alt="">
+                        <img src="pics/our_works/ga2.jpg" alt="">
+                        <img src="pics/our_works/ga3.jpg" alt="">
+                        <img src="pics/our_works/ga4.jpg" alt="">
+                        <img src="pics/our_works/ga5.jpg" alt="">
+                        <img src="pics/our_works/ga6.jpg" alt="">
+                        <img src="pics/our_works/ga7.jpg" alt="">
+                        <img src="pics/our_works/ga8.jpg" alt="">
+                        <img src="pics/our_works/ga9.jpg" alt="">
+                    </div>
                     <div class="center">Методы оплаты
                         <div class="popup-title2"> 
                             <div><img src="pics/320/card.png" alt=""></div>
@@ -261,11 +302,11 @@
                     </div>
                     <div class="center">Максимальный размер<br>
                         <div class="popup-title2">
-                            <div class="popup-maxraz">ширина 1500</div>
-                            <div class="popup-maxraz">высота 2800</div>
+                            <div class="popup-maxraz" selected>ширина 2100</div>
+                            <div class="popup-maxraz" selected>высота 3000</div>
                         </div>
                     </div>
-                    <button class="order-button button-zakazz">заказать жалюзи</button>
+                    <button  class="order-button button-zakazz" id="feedback-order3">заказать жалюзи</button>
                     <p class="popup-close-gal"><span>Вернуться на главную</span></p>
                 </div>
                 <!-- /.popup -->
@@ -282,12 +323,14 @@
                         <li>Гарантия 1 год</li>
                         <li>Цена от производителя</li>
                     </ul>
-                    <p>Светозащитные устройства, состоящие из вертикальных или горизонтальных пластин, так называемых ламелей.
-                        Ламели могут
-                        быть неподвижными или поворачиваться вокруг своей оси для регулирования световых и воздушных потоков. Жалюзи
-                        начал
-                        производить дизайнер англичанин Джон Уэбстер в 1760-х годах в Филадельфии.</p>
-                    <div class="popup-img"><img src="pics/320/read.jpg" alt=""></div>
+                    <p>Горизонтальные жалюзи деревянные органично впишутся в эко интерьер и станут его удачным дополнением. Они состоят из ламелей, так называют небольшие планки малой толщины, выполненные из натурального дерева и собранные в единое полотно. Деревянные жалюзи создают уютную атмосферу и надежно защищают внутреннее пространство комнаты от назойливых солнечных лучей. Современные производители предлагают большой выбор горизонтальных жалюзи из натурального дерева. Друг от друга модели отличаются конструкционными особенностями, дизайном, цветовыми и фактурными решениями. Вы без труда подберете идеальный вариант под любой интерьер.</p>
+                    <div class="popup-img owl-carousel">
+                        <img src="pics/our_works/gd1.jpg" alt="">
+                        <img src="pics/our_works/gd2.jpg" alt="">
+                        <img src="pics/our_works/gd3.jpg" alt="">
+                        <img src="pics/our_works/gd4.jpg" alt="">
+                        <img src="pics/our_works/gd5.jpg" alt="">
+                    </div>
                     <div class="center">Методы оплаты
                         <div class="popup-title2">
                             <div><img src="pics/320/card.png" alt=""></div>
@@ -312,11 +355,11 @@
                     </div>
                     <div class="center">Максимальный размер<br>
                         <div class="popup-title2">
-                            <div class="popup-maxraz">ширина 1500</div>
-                            <div class="popup-maxraz">высота 2800</div>
+                            <div class="popup-maxraz" selected>ширина 2100</div>
+                            <div class="popup-maxraz" selected>высота 3000</div>
                         </div>
                     </div>
-                    <button class="order-button button-zakazz">заказать жалюзи</button>
+                    <button class="order-button button-zakazz" id="feedback-order3">заказать жалюзи</button>
                     <p class="popup-close-gal"><span>Вернуться на главную</span></p>
                 </div>
                 <!-- /.popup -->
@@ -333,12 +376,17 @@
                         <li>Гарантия 1 год</li>
                         <li>Цена от производителя</li>
                     </ul>
-                    <p>Светозащитные устройства, состоящие из вертикальных или горизонтальных пластин, так называемых ламелей.
-                        Ламели могут
-                        быть неподвижными или поворачиваться вокруг своей оси для регулирования световых и воздушных потоков. Жалюзи
-                        начал
-                        производить дизайнер англичанин Джон Уэбстер в 1760-х годах в Филадельфии.</p>
-                    <div class="popup-img"><img src="pics/320/read.jpg" alt=""></div>
+                    <p>Рулонные жалюзи системы LVT созданы для больших оконных проемов жилых, офисных, торговых и общественных помещений. Их часто устанавливают на панорамные окна, используют для декорирования остекленных лоджий и террас. Они состоят из декоративного короба, который не утяжеляет оконный проем, тканевых вставок и нижних планок. Некоторые модели оснащены дополнительными опциями, выполняющими роль декора, повышающими их функционал и удобство использования. Рулонные жалюзи системы LVT выполняются в разных цветовых решениях, что позволяет без труда подобрать подходящий вариант под любое интерьерное оформление.</p>
+                    <div class="popup-img owl-carousel">
+                        <img src="pics/our_works/rl1.jpg" alt="">
+                        <img src="pics/our_works/rl2.jpg" alt="">
+                        <img src="pics/our_works/rl3.jpg" alt="">
+                        <img src="pics/our_works/rl4.jpg" alt="">
+                        <img src="pics/our_works/rl5.jpg" alt="">
+                        <img src="pics/our_works/rl6.jpg" alt="">
+                        <img src="pics/our_works/rl12.jpg" alt="">
+
+                    </div>
                     <!-- остановился по стилям тут -->
                     <div class="center">Методы оплаты
                         <div class="popup-title2">
@@ -351,8 +399,8 @@
                         <div class="popup-title2">
                             <div class="popup-varkrep" selected>на окно</div>
                             <div class="popup-varkrep" selected>на стену</div>
-                            <div class="popup-varkrep">на потолок</div>
-                            <div class="popup-varkrep" selected>на раму</div>
+                            <div class="popup-varkrep" selected>на потолок</div>
+                            <div class="popup-varkrep">на раму</div>
                             <div class="popup-varkrep" selected>на проем</div>
                         </div>
                     </div>
@@ -364,11 +412,11 @@
                     </div>
                     <div class="center">Максимальный размер<br>
                         <div class="popup-title2">
-                            <div class="popup-maxraz">ширина 1500</div>
-                            <div class="popup-maxraz">высота 2800</div>
+                            <div class="popup-maxraz" selected>ширина 3300</div>
+                            <div class="popup-maxraz" selected>высота 4500</div>
                         </div>
                     </div>
-                    <button class="order-button button-zakazz">заказать жалюзи</button>
+                    <button class="order-button button-zakazz" id="feedback-order3">заказать жалюзи</button>
                     <p class="popup-close-gal"><span>Вернуться на главную</span></p>
                 </div>
                 <!-- /.popup -->
@@ -385,12 +433,14 @@
                         <li>Гарантия 1 год</li>
                         <li>Цена от производителя</li>
                     </ul>
-                    <p>Светозащитные устройства, состоящие из вертикальных или горизонтальных пластин, так называемых ламелей.
-                        Ламели могут
-                        быть неподвижными или поворачиваться вокруг своей оси для регулирования световых и воздушных потоков. Жалюзи
-                        начал
-                        производить дизайнер англичанин Джон Уэбстер в 1760-х годах в Филадельфии.</p>
-                    <div class="popup-img"><img src="pics/320/read.jpg" alt=""></div>
+                    <p>Рулонные жалюзи системы MG подходят для жилых и нежилых интерьеров. Они предназначены для декорирования оконных проемов, устанавливаются и в них, и на них. К их сильным сторонам можно отнести эстетичный вид и повышенное удобство при использовании, а также длительный срок службы без потери первоначальных свойств. Рулонные жалюзи системы MG состоят из тканевого полотна, выполненного в разных цветовых решениях, установленного на намоточной трубе с цепочным механизмом, обеспечивающим комфортное управление. Данные конструкции хорошо смотрятся на небольших и средних оконных проемах. Фиксация полотна возможна на любой высоте.</p>
+                    <div class="popup-img owl-carousel">
+                        <img src="pics/our_works/mg1.jpg" alt="">
+                        <img src="pics/our_works/mg2.jpg" alt="">
+                        <img src="pics/our_works/mg3.jpg" alt="">
+                        <img src="pics/our_works/mg4.jpg" alt="">
+                        <img src="pics/our_works/mg5.jpg" alt="">
+                    </div>
                     <!-- остановился по стилям тут -->
                     <div class="center">Методы оплаты
                         <div class="popup-title2">
@@ -403,8 +453,8 @@
                         <div class="popup-title2">
                             <div class="popup-varkrep" selected>на окно</div>
                             <div class="popup-varkrep" selected>на стену</div>
-                            <div class="popup-varkrep">на потолок</div>
-                            <div class="popup-varkrep" selected>на раму</div>
+                            <div class="popup-varkrep" selected>на потолок</div>
+                            <div class="popup-varkrep">на раму</div>
                             <div class="popup-varkrep" selected>на проем</div>
                         </div>
                     </div>
@@ -416,11 +466,11 @@
                     </div>
                     <div class="center">Максимальный размер<br>
                         <div class="popup-title2">
-                            <div class="popup-maxraz">ширина 1500</div>
-                            <div class="popup-maxraz">высота 2800</div>
+                            <div class="popup-maxraz" selected>ширина 2500</div>
+                            <div class="popup-maxraz" selected>высота 3100</div>
                         </div>
                     </div>
-                    <button class="order-button button-zakazz">заказать жалюзи</button>
+                    <button class="order-button button-zakazz" id="feedback-order3">заказать жалюзи</button>
                     <p class="popup-close-gal"><span>Вернуться на главную</span></p>
                 </div>
                 <!-- /.popup -->
@@ -437,12 +487,20 @@
                         <li>Гарантия 1 год</li>
                         <li>Цена от производителя</li>
                     </ul>
-                    <p>Светозащитные устройства, состоящие из вертикальных или горизонтальных пластин, так называемых ламелей.
-                        Ламели могут
-                        быть неподвижными или поворачиваться вокруг своей оси для регулирования световых и воздушных потоков. Жалюзи
-                        начал
-                        производить дизайнер англичанин Джон Уэбстер в 1760-х годах в Филадельфии.</p>
-                    <div class="popup-img"><img src="pics/320/read.jpg" alt=""></div>
+                    <p>Рулонные жалюзи системы mini имеют идеальное соотношение цены и качества. Их довольно часто устанавливают в жилые дома и квартиры на оконные створки, проемы и стены. Большой выбор моделей позволяет выбрать удачный вариант, который органично впишется в общий интерьер и станет его ярким украшением. Рулонные жалюзи системы mini имеют цепочное, пружинное и автоматическое управление, оснащаются дополнительными фиксаторами отвеса – направляющими струнами, магнитами и пластиковыми креплениями. Что касается тканевого полотна, то чаще всего используется «полупрозрачное» полотно, «black-out» и прочие светоотражающие варианты. </p>
+                    <div class="popup-img owl-carousel">
+                        <img src="pics/our_works/rm8.jpg" alt="">
+                        <img src="pics/our_works/rlch.jpg" alt="">
+                        <img src="pics/our_works/rm1.jpg" alt="">
+                        <img src="pics/our_works/rm2.jpg" alt="">
+                        <img src="pics/our_works/rm3.jpg" alt="">
+                        <img src="pics/our_works/rm4.jpg" alt="">
+                        <img src="pics/our_works/rm5.jpg" alt="">
+                        <img src="pics/our_works/rm6.jpg" alt="">
+                        <img src="pics/our_works/rm7.jpg" alt="">
+                        <img src="pics/our_works/rm9.jpg" alt="">
+                        <img src="pics/our_works/rm10.jpg" alt="">
+                    </div>
                     <!-- остановился по стилям тут -->
                     <div class="center">Методы оплаты
                         <div class="popup-title2">
@@ -455,7 +513,7 @@
                         <div class="popup-title2">
                             <div class="popup-varkrep" selected>на окно</div>
                             <div class="popup-varkrep" selected>на стену</div>
-                            <div class="popup-varkrep">на потолок</div>
+                            <div class="popup-varkrep" selected>на потолок</div>
                             <div class="popup-varkrep" selected>на раму</div>
                             <div class="popup-varkrep" selected>на проем</div>
                         </div>
@@ -463,16 +521,16 @@
                     <div class="center">Типы крепления<br>
                         <div class="popup-title2">
                             <div class="popup-tipkrep" selected>на саморез</div>
-                            <div class="popup-tipkrep">на скотч</div>
+                            <div class="popup-tipkrep" selected>на скотч</div>
                         </div>
                     </div>
                     <div class="center">Максимальный размер<br>
                         <div class="popup-title2">
-                            <div class="popup-maxraz">ширина 1500</div>
-                            <div class="popup-maxraz">высота 2800</div>
+                            <div class="popup-maxraz" selected>ширина 1800</div>
+                            <div class="popup-maxraz" selected>высота 2400</div>
                         </div>
                     </div>
-                    <button class="order-button button-zakazz">заказать жалюзи</button>
+                    <button class="order-button button-zakazz" id="feedback-order3">заказать жалюзи</button>
                     <p class="popup-close-gal"><span>Вернуться на главную</span></p>
                 </div>
                 <!-- /.popup -->
@@ -489,12 +547,19 @@
                         <li>Гарантия 1 год</li>
                         <li>Цена от производителя</li>
                     </ul>
-                    <p>Светозащитные устройства, состоящие из вертикальных или горизонтальных пластин, так называемых ламелей.
-                        Ламели могут
-                        быть неподвижными или поворачиваться вокруг своей оси для регулирования световых и воздушных потоков. Жалюзи
-                        начал
-                        производить дизайнер англичанин Джон Уэбстер в 1760-х годах в Филадельфии.</p>
-                    <div class="popup-img"><img src="pics/320/read.jpg" alt=""></div>
+                    <p>Рулонные кассетные жалюзи системы UNI1/UNI2 созданы для пластиковых окон. Они оснащены боковыми направляющими и самофиксирующимся механизмом. К их сильным сторонам можно отнести элегантный дизайн, подходящий под любой современный интерьер, и удобную конструкцию, позволяющую, не прилагая усилий, поднимать и опускать ткань, фиксировать ее на нужной высоте для надежной защиты внутреннего пространства комнаты от назойливых солнечных лучей. Что касается управления рулонных кассетных жалюзи системы UNI1/UNI2, то для его обеспечения чаще всего используется цепочный механизм и электропривод. </p>
+                    <div class="popup-img owl-carousel">
+                        <img src="pics/our_works/ru1.jpg" alt="">
+                        <img src="pics/our_works/ru2.jpg" alt="">
+                        <img src="pics/our_works/ru3.jpg" alt="">
+                        <img src="pics/our_works/ru4.jpg" alt="">
+                        <img src="pics/our_works/ru5.jpg" alt="">
+                        <img src="pics/our_works/ru6.jpg" alt="">
+                        <img src="pics/our_works/ru7.jpg" alt="">
+                        <img src="pics/our_works/ru8.jpg" alt="">
+                        <img src="pics/our_works/ru9.jpg" alt="">
+                        <img src="pics/our_works/ru10.jpg" alt="">
+                    </div>
                     <!-- остановился по стилям тут -->
                     <div class="center">Методы оплаты
                         <div class="popup-title2">
@@ -505,26 +570,26 @@
                     </div>
                     <div class="center">Варианты крепления<br>
                         <div class="popup-title2">
-                            <div class="popup-varkrep" selected>на окно</div>
-                            <div class="popup-varkrep" selected>на стену</div>
+                            <div class="popup-varkrep">на окно</div>
+                            <div class="popup-varkrep">на стену</div>
                             <div class="popup-varkrep">на потолок</div>
                             <div class="popup-varkrep" selected>на раму</div>
-                            <div class="popup-varkrep" selected>на проем</div>
+                            <div class="popup-varkrep">на проем</div>
                         </div>
                     </div>
                     <div class="center">Типы крепления<br>
                         <div class="popup-title2">
                             <div class="popup-tipkrep" selected>на саморез</div>
-                            <div class="popup-tipkrep">на скотч</div>
+                            <div class="popup-tipkrep" selected>на скотч</div>
                         </div>
                     </div>
                     <div class="center">Максимальный размер<br>
                         <div class="popup-title2">
-                            <div class="popup-maxraz">ширина 1500</div>
-                            <div class="popup-maxraz">высота 2800</div>
+                            <div class="popup-maxraz" selected>ширина 1800</div>
+                            <div class="popup-maxraz" selected>высота 2300</div>
                         </div>
                     </div>
-                    <button class="order-button button-zakazz">заказать жалюзи</button>
+                    <button class="order-button button-zakazz" id="feedback-order3">заказать жалюзи</button>
                     <p class="popup-close-gal"><span>Вернуться на главную</span></p>
                 </div>
                 <!-- /.popup -->
@@ -541,12 +606,23 @@
                         <li>Гарантия 1 год</li>
                         <li>Цена от производителя</li>
                     </ul>
-                    <p>Светозащитные устройства, состоящие из вертикальных или горизонтальных пластин, так называемых ламелей.
-                        Ламели могут
-                        быть неподвижными или поворачиваться вокруг своей оси для регулирования световых и воздушных потоков. Жалюзи
-                        начал
-                        производить дизайнер англичанин Джон Уэбстер в 1760-х годах в Филадельфии.</p>
-                    <div class="popup-img"><img src="pics/320/read.jpg" alt=""></div>
+                    <p>Рулонные жалюзи системы Зебра (день-ночь) смотрятся очень стильно. Они отлично затеняют комнату и служат ярким украшением интерьера. Их главной отличительной особенностью является двойное, перекинутое через вал полотно, представляющее собой череду прозрачных и непрозрачных полос одинаковой ширины. В качестве управления используется стандартный цепочный механизм. Полотно имеет тефлоновую пропитку, обеспечивающую ему великолепные пылеотталкивающие и антистатические свойства. Это гарантирует простоту ухода и длительный срок эксплуатации данной конструкции без потери первоначальных свойств и эстетичного внешнего вида. </p>
+                   <div class="popup-img owl-carousel">
+                        <img src="pics/our_works/rz1.jpg" alt="">
+                        <img src="pics/our_works/rz2.jpg" alt="">
+                        <img src="pics/our_works/rz3.jpg" alt="">
+                        <img src="pics/our_works/rz4.jpg" alt="">
+                        <img src="pics/our_works/rz5.jpg" alt="">
+                        <img src="pics/our_works/rz6.jpg" alt="">
+                        <img src="pics/our_works/rz7.jpg" alt="">
+                        <img src="pics/our_works/rz8.jpg" alt="">
+                        <img src="pics/our_works/rz9.jpg" alt="">
+                        <img src="pics/our_works/rz10.jpg" alt="">
+                        <img src="pics/our_works/rz11.jpg" alt="">
+                        <img src="pics/our_works/rz12.jpg" alt="">
+                        <img src="pics/our_works/rz13.jpg" alt="">
+                        <img src="pics/our_works/rz14.jpg" alt="">
+                    </div>
                     <!-- остановился по стилям тут -->
                     <div class="center">Методы оплаты
                         <div class="popup-title2">
@@ -559,7 +635,7 @@
                         <div class="popup-title2">
                             <div class="popup-varkrep" selected>на окно</div>
                             <div class="popup-varkrep" selected>на стену</div>
-                            <div class="popup-varkrep">на потолок</div>
+                            <div class="popup-varkrep" selected>на потолок</div>
                             <div class="popup-varkrep" selected>на раму</div>
                             <div class="popup-varkrep" selected>на проем</div>
                         </div>
@@ -567,16 +643,16 @@
                     <div class="center">Типы крепления<br>
                         <div class="popup-title2">
                             <div class="popup-tipkrep" selected>на саморез</div>
-                            <div class="popup-tipkrep">на скотч</div>
+                            <div class="popup-tipkrep" selected>на скотч</div>
                         </div>
                     </div>
                     <div class="center">Максимальный размер<br>
                         <div class="popup-title2">
-                            <div class="popup-maxraz">ширина 1500</div>
-                            <div class="popup-maxraz">высота 2800</div>
+                            <div class="popup-maxraz" selected>ширина 2800</div>
+                            <div class="popup-maxraz" selected>высота 4500</div>
                         </div>
                     </div>
-                    <button class="order-button button-zakazz">заказать жалюзи</button>
+                    <button class="order-button button-zakazz" id="feedback-order3">заказать жалюзи</button>
                     <p class="popup-close-gal"><span>Вернуться на главную</span></p>
                 </div>
                 <!-- /.popup -->
@@ -593,14 +669,14 @@
                         <li>Гарантия 1 год</li>
                         <li>Цена от производителя</li>
                     </ul>
-                    <p>Светозащитные устройства, состоящие из вертикальных или горизонтальных пластин, так называемых
-                        ламелей.
-                        Ламели могут
-                        быть неподвижными или поворачиваться вокруг своей оси для регулирования световых и воздушных
-                        потоков. Жалюзи
-                        начал
-                        производить дизайнер англичанин Джон Уэбстер в 1760-х годах в Филадельфии.</p>
-                    <div class="popup-img"><img src="pics/320/read.jpg" alt=""></div>
+                    <p>Вертикальные жалюзи тканевые отлично подходят для декорирования оконных проемов офисных и общественных помещений. Они идеально вписываются в строгий интерьер и служат его органичным дополнением. Все модели выполнены по стандартной конструкции, в качестве управления используется цепочный или электроприводной механизм. К сильным сторонам вертикальных тканевых жалюзи можно отнести хорошее соотношение цены и качества. Большой выбор моделей позволяет подобрать нужное цветовое решение и плотность тканевых ламелей, надежно защищающих внутреннее пространство от солнца.</p>
+                    <div class="popup-img owl-carousel">
+                        <img src="pics/our_works/v1.jpg" alt="">
+                        <img src="pics/our_works/v2.jpg" alt="">
+                        <img src="pics/our_works/v3.jpg" alt="">
+                        <img src="pics/our_works/vert.jpg" alt="">
+                        <img src="pics/our_works/v5.jpg" alt="">
+                    </div>
                     <!-- остановился по стилям тут -->
                     <div class="center">Методы оплаты
                         <div class="popup-title2">
@@ -613,8 +689,8 @@
                         <div class="popup-title2">
                             <div class="popup-varkrep" selected>на окно</div>
                             <div class="popup-varkrep" selected>на стену</div>
-                            <div class="popup-varkrep">на потолок</div>
-                            <div class="popup-varkrep" selected>на раму</div>
+                            <div class="popup-varkrep" selected>на потолок</div>
+                            <div class="popup-varkrep">на раму</div>
                             <div class="popup-varkrep" selected>на проем</div>
                         </div>
                     </div>
@@ -626,11 +702,11 @@
                     </div>
                     <div class="center">Максимальный размер<br>
                         <div class="popup-title2">
-                            <div class="popup-maxraz">ширина 1500</div>
-                            <div class="popup-maxraz">высота 2800</div>
+                            <div class="popup-maxraz" selected>ширина 6000</div>
+                            <div class="popup-maxraz" selected>высота 4000</div>
                         </div>
                     </div>
-                    <button class="order-button button-zakazz">заказать жалюзи</button>
+                    <button class="order-button button-zakazz" id="feedback-order3">заказать жалюзи</button>
                     <p class="popup-close-gal"><span>Вернуться на главную</span></p>
                 </div>
                 <!-- /.popup -->
@@ -647,14 +723,14 @@
                         <li>Гарантия 1 год</li>
                         <li>Цена от производителя</li>
                     </ul>
-                    <p>Светозащитные устройства, состоящие из вертикальных или горизонтальных пластин, так называемых
-                        ламелей.
-                        Ламели могут
-                        быть неподвижными или поворачиваться вокруг своей оси для регулирования световых и воздушных
-                        потоков. Жалюзи
-                        начал
-                        производить дизайнер англичанин Джон Уэбстер в 1760-х годах в Филадельфии.</p>
-                    <div class="popup-img"><img src="pics/320/read.jpg" alt=""></div>
+                    <p>Вертикальные жалюзи пластиковые – это лучшее решение для офиса и внутренних помещений общественных зданий. Их можно использовать, в том числе и для зонирования внутреннего пространства больших площади комнат с целью обустройства отдельного рабочего места и т.д. Они имеют стандартную конструкцию, оснащаемую цепочным или приводным механизмом управления. К неоспоримым преимуществам вертикальных пластиковых жалюзи можно отнести их доступную стоимость, эстетичный вид и простоту ухода, а также большой выбор цветовых решений, удобство использования и отменные солнцезащитные свойства.</p>
+                    <div class="popup-img owl-carousel">
+                        <img src="pics/our_works/vp1.jpg" alt="">
+                        <img src="pics/our_works/vp2.webp" alt="">
+                        <img src="pics/our_works/vp3.jpeg" alt="">
+                        <img src="pics/our_works/vp4.jpg" alt="">
+                        <img src="pics/our_works/vp5.jpg" alt="">
+                    </div>
                     <!-- остановился по стилям тут -->
                     <div class="center">Методы оплаты
                         <div class="popup-title2">
@@ -667,8 +743,8 @@
                         <div class="popup-title2">
                             <div class="popup-varkrep" selected>на окно</div>
                             <div class="popup-varkrep" selected>на стену</div>
-                            <div class="popup-varkrep">на потолок</div>
-                            <div class="popup-varkrep" selected>на раму</div>
+                            <div class="popup-varkrep" selected>на потолок</div>
+                            <div class="popup-varkrep">на раму</div>
                             <div class="popup-varkrep" selected>на проем</div>
                         </div>
                     </div>
@@ -680,11 +756,11 @@
                     </div>
                     <div class="center">Максимальный размер<br>
                         <div class="popup-title2">
-                            <div class="popup-maxraz">ширина 1500</div>
-                            <div class="popup-maxraz">высота 2800</div>
+                            <div class="popup-maxraz" selected>ширина 4000</div>
+                            <div class="popup-maxraz" selected>высота 3500</div>
                         </div>
                     </div>
-                    <button class="order-button button-zakazz">заказать жалюзи</button>
+                    <button class="order-button button-zakazz" id="feedback-order3">заказать жалюзи</button>
                     <p class="popup-close-gal"><span>Вернуться на главную</span></p>
                 </div>
                 <!-- /.popup -->
@@ -701,14 +777,16 @@
                         <li>Гарантия 1 год</li>
                         <li>Цена от производителя</li>
                     </ul>
-                    <p>Светозащитные устройства, состоящие из вертикальных или горизонтальных пластин, так называемых
-                        ламелей.
-                        Ламели могут
-                        быть неподвижными или поворачиваться вокруг своей оси для регулирования световых и воздушных
-                        потоков. Жалюзи
-                        начал
-                        производить дизайнер англичанин Джон Уэбстер в 1760-х годах в Филадельфии.</p>
-                    <div class="popup-img"><img src="pics/320/read.jpg" alt=""></div>
+                    <p>Вертикальные жалюзи металлические смотрятся элегантно и стильно. Их используют для декорирования оконных проемов роскошных офисных и общественных помещений. Они богато смотрятся, удачно дополняют интерьер и обладают высокими солнцезащитными свойствами. Их ламели выполняются их алюминия, они могут быть цельными и перфорированными. Выбор цветовых решений у них ограничен. Вертикальные металлические жалюзи имеют классическую конструкцию и оснащаются электроприводным управлением, обеспечивающим удобство их эксплуатации. Их довольно часто используют для зонирования внутреннего пространства, что бывает необходимо в офисах открытого типа. </p>
+                    <div class="popup-img owl-carousel">
+                        <img src="pics/our_works/va1.jpg" alt="">
+                        <img src="pics/our_works/va2.jpg" alt="">
+                        <img src="pics/our_works/va3.jpg" alt="">
+                        <img src="pics/our_works/va4.jpg" alt="">
+                        <img src="pics/our_works/va5.jpg" alt="">
+                        <img src="pics/our_works/va6.jpg" alt="">
+                        <img src="pics/our_works/va7.jpg" alt="">
+                    </div>
                     <div class="center">Методы оплаты
                         <div class="popup-title2">
                             <div><img src="pics/320/card.png" alt=""></div>
@@ -720,8 +798,8 @@
                         <div class="popup-title2">
                             <div class="popup-varkrep" selected>на окно</div>
                             <div class="popup-varkrep" selected>на стену</div>
-                            <div class="popup-varkrep">на потолок</div>
-                            <div class="popup-varkrep" selected>на раму</div>
+                            <div class="popup-varkrep" selected>на потолок</div>
+                            <div class="popup-varkrep">на раму</div>
                             <div class="popup-varkrep" selected>на проем</div>
                         </div>
                     </div>
@@ -733,11 +811,11 @@
                     </div>
                     <div class="center">Максимальный размер<br>
                         <div class="popup-title2">
-                            <div class="popup-maxraz">ширина 1500</div>
-                            <div class="popup-maxraz">высота 2800</div>
+                            <div class="popup-maxraz" selected>ширина 4500</div>
+                            <div class="popup-maxraz" selected>высота 4000</div>
                         </div>
                     </div>
-                    <button class="order-button button-zakazz">заказать жалюзи</button>
+                    <button class="order-button button-zakazz" id="feedback-order3">заказать жалюзи</button>
                     <p class="popup-close-gal"><span>Вернуться на главную</span></p>
                 </div>
                 <!-- /.popup -->
@@ -816,16 +894,18 @@
                         <input id="content-feedback-name" type="text" name="name" placeholder="Введите имя"><br>
                         <input id="content-feedback-phone"  type="phone" name="phone" placeholder="Введите телефон"><br>
                         <input id="content-feedback-address" type="addr" name="name" placeholder="Введите адрес замера"><br>
-                        <input type="submit" value="Заказать бесплатный замер" class="form-control-submit order-button">
+                        <input id="feedback-order3" type="submit" value="Заказать бесплатный замер" class="form-control-submit order-button">
                     </form>
                 </div>
             </div>
             
             <div id="modal_serf" class="modal">
                 <div class="owl-carousel"> 
-                    <div><img src="pics/320/143_sertifikat-rpo.png" alt="сертификат"></div>                        
-                    <div><img src="pics/320/143_sertifikat-rpo.png" alt="сертификат"></div>
-                    <div><img src="pics/320/143_sertifikat-rpo.png" alt="сертификат"></div>
+                    <div><img src="pics/serf/serf1.jpg" alt="сертификат"></div>                        
+                    <div><img src="pics/serf/serf2.jpg" alt="сертификат"></div>
+                    <div><img src="pics/serf/serf3.jpeg" alt="сертификат"></div>
+                    <div><img src="pics/serf/serf4.jpeg" alt="сертификат"></div>
+                    <div><img src="pics/serf/pril.jpg" alt="сертификат"></div>
                     <!-- <div class="owl-next arrow-right-content">
                         <img src="pics/320/slider/strelka-right.png" alt="">
                     </div>
@@ -848,7 +928,7 @@
                         </p>
                     </div>
                     <div class="ggd">
-                        <img src="pics/320/slider/alum.jpg" alt="вертикальные жалюзи">
+                        <img src="pics/320/slider/derevo.jpg" alt="вертикальные жалюзи">
                         <p><span class="fat-text">Горизонтальные<br>деревянные жалюзи</span><br>
                                 <span class="price-text">от 400 руб.</span>
                         </p>
@@ -884,19 +964,19 @@
                         </p>
                     </div>
                     <div class="gvt">
-                        <img src="pics/320/slider/ZEBRA.jpg" alt="вертикальные жалюзи ткань">
+                        <img src="pics/320/slider/vertikal.jpg" alt="вертикальные жалюзи ткань">
                         <p><span class="fat-text">Вертикальные жалюзи <br>ткань</span><br>
                             <span class="price-text">от 2200 руб.</span>
                         </p>
                     </div>
                     <div class="gvp">
-                        <img src="pics/320/slider/ZEBRA.jpg" alt="вертикальные жалюзи пластик">
+                        <img src="pics/320/slider/plastik.jpg" alt="вертикальные жалюзи пластик">
                         <p><span class="fat-text">Вертикальные жалюзи<br> пластик</span><br>
                             <span class="price-text">от 2200 руб.</span>
                         </p>
                     </div>
                     <div class="gvm">
-                        <img src="pics/320/slider/ZEBRA.jpg" alt="вертикальные жалюзи металл">
+                        <img src="pics/320/slider/metall.jpg" alt="вертикальные жалюзи металл">
                         <p><span class="fat-text">Вертикальные жалюзи<br> металл</span><br>
                             <span class="price-text">от 2200 руб.</span>
                         </p>
@@ -946,13 +1026,20 @@
         <section class="they-trust-us">
             <p class="text-uppercase">Нам доверяют</p>
             <div class="slade-they-trust-us slide">
-                <div><img src="pics/320/trust.png" alt="алюминиевые жалюзи"></div>
-                <div><img src="pics/320/stanok.jpg" alt="алюминиевые жалюзи"></div>
-                <div><img src="pics/320/read.jpg" alt="алюминиевые жалюзи"></div>
-                <div><img src="pics/320/trust.png" alt="алюминиевые жалюзи"></div>
-                <div><img src="pics/320/stanok.jpg" alt="алюминиевые жалюзи"></div>
-                <div><img src="pics/320/trust.png" alt="алюминиевые жалюзи"></div>
-                <div><img src="pics/320/stanok.jpg" alt="алюминиевые жалюзи"></div>
+                <div><img src="pics/trust/14988537478.jpg" alt=""></div>
+                <div><img src="pics/trust/637422.jpeg" alt=""></div>
+                <div><img src="pics/trust/image003.png" alt=""></div>
+                <div><img src="pics/trust/logo-header.png" alt=""></div>
+                <div><img src="pics/trust/logo.jpg" alt=""></div>
+                <div><img src="pics/trust/logo.png" alt=""></div>
+                <div><img src="pics/trust/%D0%90%D0%9A%D0%91%D0%A6.png" alt=""></div>
+                <div><img src="pics/trust/%D0%91%D0%B5%D0%B7%D1%8B%D0%BC%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9.jpg" alt=""></div>
+                <div><img src="pics/trust/%D0%91%D0%BB%D0%B0%D0%B3%D0%BE%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5.jpg" alt=""></div>
+                <div><img src="pics/trust/%D0%93%D0%B8%D0%BF%D1%81%20%D0%94%D0%92.jpg" alt=""></div>
+                <div><img src="pics/trust/%D0%94%D0%B5%D0%BD%D1%82%20%D0%98%D0%BC%D0%BF%D0%BB%D0%B0%D0%BD%D1%82.jpg" alt=""></div>
+                <div><img src="pics/trust/%D0%9B%D0%BE%D0%BA%D0%BE%D0%BC%D0%BE%D1%82%D0%B8%D0%B2.jpg" alt=""></div>
+                <div><img src="pics/trust/%D0%9B%D0%BE%D0%BA%D0%BE%D0%BC%D0%BE%D1%82%D0%B8%D0%B21.jpg" alt=""></div>
+                <div><img src="pics/trust/%D0%9D%D0%BE%D0%B2%20%D0%90%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.jpg" alt=""></div>
             </div>
             <div class="trust-arrow-right">
                 <img src="pics/320/slider/strelka-right.png" alt="">
@@ -965,12 +1052,15 @@
         <section class="works">
             <p class="text-uppercase">фото наших работ</p>
             <div class="slider-work-content">                
-                <div><img src="pics/our_works/3.jpg" alt=""></div>
-                <div><img src="pics/our_works/3.jpg" alt=""></div>
-                <div><img src="pics/our_works/3.jpg" alt=""></div>
-                <div><img src="pics/our_works/3.jpg" alt=""></div>
-                <div><img src="pics/our_works/3.jpg" alt=""></div>
-                <div><img src="pics/our_works/3.jpg" alt=""></div>
+                <div><a rel="simplebox" href="pics/our_works/1.jpg"><img src="pics/our_works/1.jpg" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/2%20%282%29.JPG"><img src="pics/our_works/2%20%282%29.JPG" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/2.jpg"><img src="pics/our_works/2.jpg" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/233.jpg"><img src="pics/our_works/233.jpg" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/3.jpg"><img src="pics/our_works/3.jpg" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/PHOTO-2019-04-15-16-12-03.jpg"><img src="pics/our_works/PHOTO-2019-04-15-16-12-03.jpg" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/rl.jpg"><img src="pics/our_works/rl.jpg" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/rlch.jpg"><img src="pics/our_works/rlch.jpg" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/vert.jpg"><img src="pics/our_works/vert.jpg" alt=""></a></div>
             </div>
             <div class="work-arrow-right">
                 <img src="pics/320/slider/strelka-right.png" alt="">
@@ -994,11 +1084,28 @@
             </form>
         </section>
     </div>
+    <script type="text/javascript" src="libs/simplebox/simplebox_util.js"></script>
+    <script type="text/javascript" src="libs/simplebox/simplebox.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/jquery.modal.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slider-work.js"></script>
+    
+    <script type="text/javascript">
+        (function(){
+        var boxes=[],els,i,l;
+        if(document.querySelectorAll){
+        els=document.querySelectorAll('a[rel=simplebox]');  
+        Box.getStyles('simplebox_css','libs/simplebox/simplebox.css');
+        Box.getScripts('simplebox_js','libs/simplebox/simplebox.js',function(){
+        simplebox.init();
+        for(i=0,l=els.length;i<l;++i)
+        simplebox.start(els[i]);
+        simplebox.start('a[rel=simplebox_group]');          
+        });
+        }
+        })();</script>
 </body>
 </html>

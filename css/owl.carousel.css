@@ -72,12 +72,12 @@
   .owl-carousel .owl-nav button.owl-next{
     position:absolute;
     top: 40%;
-    left: -15px;
+    right: -15px;
   }
   .owl-carousel .owl-nav button.owl-prev{
     position:absolute;
     top: 40%;
-    right: -15px;
+    left: -15px;
   }
   .owl-carousel.owl-loaded {
     display: block; }

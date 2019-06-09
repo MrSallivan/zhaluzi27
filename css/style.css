@@ -35,14 +35,14 @@ header{
     display: block;
 } */
 .owl-carousel .owl-nav .owl-prev{
-          background-image: url("../pics/320/slider/strelka-right.png");
+          background-image: url("../pics/320/slider/strelka-left.png");
           background-size: cover;
           background-color: transparent;
           width: 30px;
           height: 30px;
         }
 .owl-carousel .owl-nav .owl-next{
-          background-image: url("../pics/320/slider/strelka-left.png");
+          background-image: url("../pics/320/slider/strelka-right.png");
           background-color: transparent;
           background-size: cover;
           width: 30px;
@@ -56,6 +56,9 @@ header{
 .bmr{
     margin-bottom: 15px;
 }
+#navgor{
+        display: none;
+    }
 /*------------------------------LOGO SECTION----------------------------*/
 .logo-map, 
 .logo-hourswork,
@@ -361,6 +364,9 @@ img{
 
     }
         .popup-close span{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             display: inline-block;
             text-align: center;
             width: 20px;
@@ -373,6 +379,9 @@ img{
         .popup-close2 span,
         .popup-close3 span,
         .popup-close_bz span {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             display: inline-block;
             text-align: center;
             width: 20px;
@@ -383,6 +392,35 @@ img{
             color: black;
             margin-bottom: 20px;
         }
+        .popup-m {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: black;
+            font-size: 14px;
+        }
+        .popup-m span {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 100%;
+            background-color: #fff600;
+            margin: 0;
+            padding: 0;
+            margin-left: 5px;
+            color: red;
+            
+            
+        }
+
     .popup-title {
         font-size: 25px;
         font-weight: 400;
@@ -414,6 +452,16 @@ img{
     div.popup-tipkrep[selected],
     div.popup-maxraz[selected] {
         background-color: #f7ae3f;
+    }
+    div.popup-varkrep[selected]:after,
+    div.popup-tipkrep[selected]:after,
+    div.popup-maxraz[selected]:after {
+        content: '✔';
+        /* position: absolute; */
+        /* top: 0;
+        left: 0; */
+        margin-left: 5px;
+        color: green;
     }
     .popup-img{
         width: 100%;
@@ -489,6 +537,10 @@ input#coast_gal{
 #feedback-phone3,
 #feedback-name3 {
     border: 2px solid black;
+    width: 100%;
+}
+#feedback-order3 {
+    width: 100%;
 }
 .rotate_img{
     -moz-transform: rotate(90deg);
@@ -884,13 +936,13 @@ div.order-button{
 }
 .trust-arrow-right{
     position: absolute;
-    top: 45%;
+    top:37%;
     right: 16px;
     cursor: pointer;
 }
 .trust-arrow-left{
     position: absolute;
-    top: 45%;
+    top:37%;
     left: 16px;
     cursor: pointer;
 }
@@ -919,10 +971,16 @@ div.order-button{
 .works p.text-uppercase{
 	margin-bottom: 20px;
 }
-
+.slider-work-content > div {
+   text-align: center;
+}
 .slider-work-content img {
-    display: block;
+    /*display: block;*/
     padding: 0 10px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+
 }
 
 .work-arrow-right{
@@ -1081,6 +1139,18 @@ form input{
         font-weight: 900;
         font-size: 17px;
     }
+    .trust-arrow-right{
+    position: absolute;
+    top:45%;
+    right: 16px;
+    cursor: pointer;
+    }
+    .trust-arrow-left{
+        position: absolute;
+        top:45%;
+        left: 16px;
+        cursor: pointer;
+    }
 /*------------------------------------------------------------FEEDBACK------------------------------------------------*/
     .form-control-name,
     .form-control-phone {
@@ -1105,6 +1175,13 @@ form input{
     /*-----------------------------------LOGO SECTION-------------------------*/
     .logo {
     justify-content: space-between;
+    }
+    .wrapper-logo {
+        background-image: url(../pics/750/bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        height:100%;
     }
     .logo-cal-button {
         display: block;
@@ -1162,6 +1239,76 @@ form input{
         font-weight: 900;
         margin: 0 auto;
         text-align: center;
+    }
+    .menu {
+        display: none;
+    }
+    #nav {
+        display: none;
+    }
+    #navgor{
+        display: block;
+        background-color: #f7ae3f;
+    }
+    #navgor > ul {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .menu-text{
+    font-size: 18px;
+    color: #333333;
+    margin-right: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    }
+    .menu-text:hover{
+        font-weight: 400;
+    }
+    #navgor > ul > li {
+        position: relative;
+    }
+    #navgor > ul > li:hover .sub-menu1,
+    #navgor > ul > li:hover .sub-menu2,
+    #navgor > ul > li:hover .sub-menu3 {
+        display: block;
+        z-index: 2;
+    }
+    .sub-menu1,
+    .sub-menu2,
+    .sub-menu3 {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: #f7ae3f;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .sub-menu1 li, 
+    .sub-menu2 li, 
+    .sub-menu3 li {
+        margin: 0;
+        /*margin-left: 20px;
+        margin-right: 20px;*/
+        padding: 10px 10px;
+        font-size: 18px;
+        list-style: none;
+        text-align: center;
+    }
+    .sub-menu1 li:hover:last-child,
+    .sub-menu2 li:hover:last-child,
+    .sub-menu3 li:hover:last-child {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .sub-menu1 li:hover, 
+    .sub-menu2 li:hover, 
+    .sub-menu3 li:hover {
+         background-color: #fff600;
+    }
+    .block {
+        display: block;
     }
 /*------------------------------------------------------MAIN SECTION-------------------------------------------------------------------*/
     .main {
@@ -1265,7 +1412,26 @@ form input{
         background-attachment: local;
         background-size: cover;
     }
-
+    /*------------------------------------------------------------POPUP------------------------------------------------------------*/
+    
+    
+    .overlay-gal-goriz_alum .popup,
+    .overlay-gal-goriz_derevo .popup,
+    .overlay-gal-rulonki_lvt .popup,
+    .overlay-gal-rulonki_mg .popup,
+    .overlay-gal-rulonki_mini .popup,
+    .overlay-gal-rulonki_uni .popup,
+    .overlay-gal-rulonki_zebra .popup,
+    .overlay-gal-vertikalki_plast .popup,
+    .overlay-gal-vertikalki_tkan .popup,
+    .overlay-gal-vertikalki_metal .popup {
+        min-width: 750px;
+       
+    }
+    .popup-ul {
+        text-align: center;
+    }
+    
     
 }
 /*--------------------------------------MEDIA 1170--------------------------------------------------------------------------*/
@@ -1341,6 +1507,7 @@ form input{
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
+        padding-bottom: 45px;
     }
     .how-order>div {
         margin-bottom: 40px;
@@ -1351,6 +1518,30 @@ form input{
         position: relative;
     }
     .they-trust-us {
-        padding-top: 30px;
+        padding-top: 0;
+    }
+    .trust-arrow-right{
+    position: absolute;
+    top: 57%;
+    right: 5px;
+    cursor: pointer;
+    }
+    .trust-arrow-left{
+        position: absolute;
+        top: 57%;
+        left: 5px;
+        cursor: pointer;
+    }
+    .trust-arrow-right{
+    position: absolute;
+    top:43%;
+    right: 16px;
+    cursor: pointer;
+    }
+    .trust-arrow-left{
+        position: absolute;
+        top:43%;
+        left: 16px;
+        cursor: pointer;
     }
 }
