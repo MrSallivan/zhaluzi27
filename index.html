@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="libs/simplebox/simplebox.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="js/html5shiv.js"></script>
@@ -1002,15 +1003,15 @@
         <section class="works">
             <p class="text-uppercase">фото наших работ</p>
             <div class="slider-work-content">                
-                <div><img src="pics/our_works/1.jpg" alt=""></div>
-                <div><img src="pics/our_works/2%20%282%29.JPG" alt=""></div>
-                <div><img src="pics/our_works/2.jpg" alt=""></div>
-                <div><img src="pics/our_works/233.jpg" alt=""></div>
-                <div><img src="pics/our_works/3.jpg" alt=""></div>
-                <div><img src="pics/our_works/PHOTO-2019-04-15-16-12-03.jpg" alt=""></div>
-                <div><img src="pics/our_works/rl.jpg" alt=""></div>
-                <div><img src="pics/our_works/rlch.jpg" alt=""></div>
-                <div><img src="pics/our_works/vert.jpg" alt=""></div>
+                <div><a rel="simplebox" href="pics/our_works/1.jpg"><img src="pics/our_works/1.jpg" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/2%20%282%29.JPG"><img src="pics/our_works/2%20%282%29.JPG" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/2.jpg"><img src="pics/our_works/2.jpg" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/233.jpg"><img src="pics/our_works/233.jpg" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/3.jpg"><img src="pics/our_works/3.jpg" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/PHOTO-2019-04-15-16-12-03.jpg"><img src="pics/our_works/PHOTO-2019-04-15-16-12-03.jpg" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/rl.jpg"><img src="pics/our_works/rl.jpg" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/rlch.jpg"><img src="pics/our_works/rlch.jpg" alt=""></a></div>
+                <div><a rel="simplebox" href="pics/our_works/vert.jpg"><img src="pics/our_works/vert.jpg" alt=""></a></div>
             </div>
             <div class="work-arrow-right">
                 <img src="pics/320/slider/strelka-right.png" alt="">
@@ -1034,11 +1035,28 @@
             </form>
         </section>
     </div>
+    <script type="text/javascript" src="libs/simplebox/simplebox_util.js"></script>
+    <script type="text/javascript" src="libs/simplebox/simplebox.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/jquery.modal.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slider-work.js"></script>
+    
+    <script type="text/javascript">
+        (function(){
+        var boxes=[],els,i,l;
+        if(document.querySelectorAll){
+        els=document.querySelectorAll('a[rel=simplebox]');  
+        Box.getStyles('simplebox_css','libs/simplebox/simplebox.css');
+        Box.getScripts('simplebox_js','libs/simplebox/simplebox.js',function(){
+        simplebox.init();
+        for(i=0,l=els.length;i<l;++i)
+        simplebox.start(els[i]);
+        simplebox.start('a[rel=simplebox_group]');          
+        });
+        }
+        })();</script>
 </body>
 </html>

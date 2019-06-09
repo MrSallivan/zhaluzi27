@@ -35,14 +35,14 @@ header{
     display: block;
 } */
 .owl-carousel .owl-nav .owl-prev{
-          background-image: url("../pics/320/slider/strelka-right.png");
+          background-image: url("../pics/320/slider/strelka-left.png");
           background-size: cover;
           background-color: transparent;
           width: 30px;
           height: 30px;
         }
 .owl-carousel .owl-nav .owl-next{
-          background-image: url("../pics/320/slider/strelka-left.png");
+          background-image: url("../pics/320/slider/strelka-right.png");
           background-color: transparent;
           background-size: cover;
           width: 30px;
@@ -936,13 +936,13 @@ div.order-button{
 }
 .trust-arrow-right{
     position: absolute;
-    top: 45%;
+    top:37%;
     right: 16px;
     cursor: pointer;
 }
 .trust-arrow-left{
     position: absolute;
-    top: 45%;
+    top:37%;
     left: 16px;
     cursor: pointer;
 }
@@ -971,10 +971,16 @@ div.order-button{
 .works p.text-uppercase{
 	margin-bottom: 20px;
 }
-
+.slider-work-content > div {
+   text-align: center;
+}
 .slider-work-content img {
-    display: block;
+    /*display: block;*/
     padding: 0 10px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+
 }
 
 .work-arrow-right{
@@ -1132,6 +1138,18 @@ form input{
     .sert-button:hover{
         font-weight: 900;
         font-size: 17px;
+    }
+    .trust-arrow-right{
+    position: absolute;
+    top:45%;
+    right: 16px;
+    cursor: pointer;
+    }
+    .trust-arrow-left{
+        position: absolute;
+        top:45%;
+        left: 16px;
+        cursor: pointer;
     }
 /*------------------------------------------------------------FEEDBACK------------------------------------------------*/
     .form-control-name,
@@ -1395,7 +1413,18 @@ form input{
         background-size: cover;
     }
     /*------------------------------------------------------------POPUP------------------------------------------------------------*/
-    .popup {
+    
+    
+    .overlay-gal-goriz_alum .popup,
+    .overlay-gal-goriz_derevo .popup,
+    .overlay-gal-rulonki_lvt .popup,
+    .overlay-gal-rulonki_mg .popup,
+    .overlay-gal-rulonki_mini .popup,
+    .overlay-gal-rulonki_uni .popup,
+    .overlay-gal-rulonki_zebra .popup,
+    .overlay-gal-vertikalki_plast .popup,
+    .overlay-gal-vertikalki_tkan .popup,
+    .overlay-gal-vertikalki_metal .popup {
         min-width: 750px;
        
     }
@@ -1501,6 +1530,18 @@ form input{
         position: absolute;
         top: 57%;
         left: 5px;
+        cursor: pointer;
+    }
+    .trust-arrow-right{
+    position: absolute;
+    top:43%;
+    right: 16px;
+    cursor: pointer;
+    }
+    .trust-arrow-left{
+        position: absolute;
+        top:43%;
+        left: 16px;
         cursor: pointer;
     }
 }
