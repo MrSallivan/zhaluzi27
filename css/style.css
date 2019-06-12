@@ -1050,7 +1050,7 @@ form input{
         align-items: space-around;
         padding-top: 35px;
         height: 100%;
-        background: url(../pics/480/fon_vawe.png);
+        background: url(../pics/320/fon_vawe.png);
     }
     .advantages1,
     .advantages2,
@@ -1066,7 +1066,7 @@ form input{
     }
     /* ....................................HOW ORDER................................................................................ */
     .how-order {
-        background: url(../pics/480/fon_vawe.png);
+        background: url(../pics/320/fon_vawe.png);
         
     }
     /*...........................CONTENT.................................*/
