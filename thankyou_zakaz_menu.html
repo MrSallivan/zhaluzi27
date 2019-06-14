@@ -23,6 +23,20 @@
 	<link rel="icon" href="img/favicon.png" type="image/x-icon" />
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(54021817, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/54021817" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 	<script src="libs/jquery/jquery3.js"></script>
 	<script src="js/html5shiv.js"></script>
 	
@@ -36,59 +50,151 @@
 	<!-- Здесь пишем код -->
 	<div class="wrapper">
 		<header>
-			<div class="logo">
-				<a href="https://zhaluzi27.ru"><img src="pics/320/logo.png" alt=""></a>
-			</div>
-			<div class="menu">
-				<div id="menu-button-geo" class="">
-					<li><a href="#"><img src="pics/320/geo.png" alt=""></a></li>
-				</div>
-				<div id="menu-button-phone" class="animated infinite shake">
-					<li><a href="#"><img src="pics/320/phone.png" alt=""></a></li>
-				</div>
-			</div>
-			<div class="addr">
-				<span> г.Хабаровск, ул. Некрасова 44</span>
-				<div class="map">
-					<iframe
-						src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae967e07b198990acfa44ba22444f34ff5568c57bce7180aed4827cef37b00f49&amp;source=constructor"
-						frameborder="0"></iframe>
-				</div>
-			</div>
-			<div class="phone">
-				<a href="tel: +74212280083"><span>+7 (4212)</span> 28-00-83</a>
-				<div class="cal-button">
-					Заказать звонок
-				</div>
-				<div class="hour">
-					<div class="clock">
-						<img src="pics/320/ico-clock.png" alt="иконка часов">
-					</div>
-					<div class="hour_work">
-						Пн.-Пт. 10-19<br>
-						Сб.-Вс. 11-16
-					</div>
-				</div>
-			</div>
-			<div class="overlay3">
-				<div class="popup">
-					<div class="popup-close3">Закрыть<span>&times;</span></div>
-					<form method="POST" action="php/call.php" class="contact_form4">
-						<!-- Hidden Required Fields -->
-						<input type="hidden" name="project_name" value="Сайт жалюзи zhaluzi27.ru">
-						<input type="hidden" name="admin_email" value="alexnikolaenko@yandex.ru">
-						<input type="hidden" name="form_subject" value="Сообщение с формы заказа звонка!">
-						<input type="hidden" name="email_from" value="pochta@zhaluzi27.ru">
-						<!-- END Hidden Req-->
-						<input id="feedback-name3" class="form-control-name order-button" type="text" name="name"
-							placeholder="Введите свое имя"><br>
-						<input id="feedback-phone3" class="form-control-phone order-button" type="phone" name="phone"
-							placeholder="Телефон"><br>
-						<input type="submit" value="Заказать звонок" class="form-control-submit order-button">
-					</form>
-				</div>
-			</div>
-		</header>
+            <div class="wrapper-logo">
+                <div class="logo">
+                    <div class="logo-logo"><a href="https://zhaluzi27.ru"><img src="pics/320/logo.png" alt=""></a></div>
+                    <div class="logo-map">
+                        <div class="logo-map-karta">
+                            <div class="logo-map-karta_ico">
+                                <img src="pics\750\ico-addr.png" alt="иконка карты">
+                            </div>
+                            <p><a href="#">на карте</a></p>
+                        </div>
+                        <p><span>г.Хабаровск</span></p>
+                        <p><span>ул.Некрасова 44</span></p>
+                    </div>
+                    <div class="logo-hourswork">
+                        <div class="logo-hourswork_ico">
+                            <img src="pics/750/ico-clock.png" alt="">
+                        </div>
+                        <div class="logo-hourswork_hw">
+                            <p>Пн.- Пн. 10 -19</p>
+                            <p>Сб.- Вс. 11 -16</p>
+                        </div>
+                    </div>
+                    <div class="logo-telefon">
+                        <div class="logo-telefon-1170">
+                            <div class="logo-telefon_ico">
+                                <img src="pics/750/ico-phone.png" alt="">  
+                            </div>
+                            <div class="logo-telefon_tel">
+                                <a href="tel: +74212280083">+7 (4212) <span>28-00-83</span></a>
+                            </div>
+                        </div>
+                        <div class="logo-cal-button">
+                            Заказать звонок
+                        </div>
+                    </div>
+                </div>
+                <h1 class="main-header">жалюзи в хабаровске</h1>
+            </div>
+            <div class="menu">
+                <div id="menu-button" class=""><li><a href="#"><img src="pics/320/menu.png" alt=""></a></li></div>
+                <div id="menu-button-geo" class=""><li><a href="#"><img src="pics/320/geo.png" alt=""></a></li></div>
+                <div id="menu-button-phone" class="animated infinite shake"><li><a href="#"><img src="pics/320/phone.png" alt=""></a></li></div>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li class="anim1"><span class="menu-text">Горизонтальные жалюзи</span> <img class="anim_img1" src="pics/320/str_menu.png" height="13" alt="">
+                        <ul class="sub-menu1">
+                            <li><a href="#1">Алюминиевые</a></li>
+                            <li><a href="#2">Деревянныее</a></li>
+                        </ul>
+                    </li>
+                    <li class="anim2"><span class="menu-text">Рулонные шторы</span> <img class="anim_img2" src="pics/320/str_menu.png"
+                    height="13" alt="">
+                        <ul class="sub-menu2">
+                            <li><a href="#1">LVT</a></li>
+                            <li><a href="#2">MG</a></li>
+                            <li><a href="#3">mini</a></li>
+                            <li><a href="#4">Кассетные UNI1/UNI2</a></li>
+                            <li class="anim4"><a href="#5">День-ночь (Зебра)</a></li>
+                        </ul>
+                    </li>
+                    <li class="anim3"><span class="menu-text">Вертикальные жалюзи</span> <img class="anim_img3" src="pics/320/str_menu.png"
+                    height="13" alt="">
+                        <ul class="sub-menu3">
+                            <li><a href="#1">Тканевые</a></li>
+                            <li><a href="#2">Пластиковые</a></li>
+                            <li><a href="#3">Металл</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="popup-m"><span>&times;</span></div>
+            </nav>
+            <nav id="navgor">
+                <ul>
+                    <li><span class="menu-text">Горизонтальные жалюзи</span> <img class="rotate_img" src="pics/320/str_menu.png" height="13" alt="">
+                        <ul class="sub-menu1">
+                            <li><a class="block" href="#1">Алюминиевые</a></li>
+                            <li><a class="block" href="#2">Деревянныее</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="menu-text">Рулонные шторы</span><img class="rotate_img" src="pics/320/str_menu.png"
+                    height="13" alt="">
+                        <ul class="sub-menu2">
+                            <li><a class="block" href="#1">LVT</a></li>
+                            <li><a class="block" href="#2">MG</a></li>
+                            <li><a class="block" href="#3">mini</a></li>
+                            <li><a class="block" href="#4">Кассетные UNI1/UNI2</a></li>
+                            <li class="anim4"><a href="#5">День-ночь (Зебра)</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="menu-text">Вертикальные жалюзи</span><img class="rotate_img" src="pics/320/str_menu.png"
+                    height="13" alt="">
+                        <ul class="sub-menu3">
+                            <li><a class="block" href="#1">Тканевые</a></li>
+                            <li><a class="block" href="#2">Пластиковые</a></li>
+                            <li><a class="block" href="#3">Металл</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+
+            </nav>
+            <div class="addr">
+                <span> г.Хабаровск, ул. Некрасова 44</span>
+                <div class="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae967e07b198990acfa44ba22444f34ff5568c57bce7180aed4827cef37b00f49&amp;source=constructor"
+                    frameborder="0"></iframe>
+                </div>
+                <div class="popup-m"><span>&times;</span></div>
+            </div>
+            <div class="phone">
+                <a href="tel: +74212280083"><span>+7 (4212)</span> 28-00-83</a>
+                <div class="cal-button">
+                    Заказать звонок
+                </div>
+                <div class="hour">
+                    <div class="clock">
+                        <img src="pics/320/ico-clock.png" alt="иконка часов">
+                    </div>
+                    <div class="hour_work">
+                        Пн.-Пт. 10-19<br>
+                        Сб.-Вс. 11-16
+                    </div>
+                </div>
+                <div class="popup-m"><span>&times;</span></div>
+            </div>
+            <div class="overlay3">
+                <div class="popup">
+                    <div class="popup-close3">Закрыть<span>&times;</span></div>
+                    <form method="POST" action="php/call.php" class="contact_form4">
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="Сайт жалюзи zhaluzi27.ru">
+                        <input type="hidden" name="admin_email" value="alexnikolaenko@yandex.ru">
+                        <input type="hidden" name="form_subject" value="Сообщение с формы заказа звонка!">
+                        <input type="hidden" name="email_from" value="pochta@zhaluzi27.ru">
+                        <!-- END Hidden Req-->
+                        <input id="feedback-name3" class="form-control-name order-button" type="text" name="name"
+                            placeholder="Введите свое имя"><br>
+                        <input id="feedback-phone3" class="form-control-phone order-button" type="phone" name="phone"
+                            placeholder="Телефон"><br>
+                        <input type="submit" id="feedback-order3" value="Заказать звонок" class="form-control-submit order-button">
+                    </form>
+                </div>
+            </div>
+        </header>
 		<div class="thankyou">
 			<h1>Форма успешно отправлена!</h1>
 			<p>В ближайшее время наш специалист свяжется с вами и уточнит детали заказа.</p>
